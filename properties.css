@@ -295,16 +295,12 @@ body.menu-open {
 
 
 
-:root {
-    --white: rgb(255, 255, 255);
-    --black: rgb(34, 34, 34);
-    --dark: rgb(0, 66, 116);
-    --light: rgb(82, 196, 249);
-}
+
 
 .properties-cinematic {
     padding: 100px 5%;
     background-color: #f8f9fa;
+    overflow-x: hidden;
 }
 
 .prop-header {

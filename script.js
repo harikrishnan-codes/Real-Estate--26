@@ -5,7 +5,11 @@ const navLinks = document.querySelector(".nav-links");
 
 hamburger.addEventListener("click", function () {
     navLinks.classList.toggle("active");
+
+    document.body.classList.toggle("menu-open");
 });
+
+
 
 
 
@@ -88,36 +92,56 @@ observer.observe(statsSection);
 
 
 
-
+// services js
 
 const tabs = document.querySelectorAll('.tab-btn');
 const slider = document.querySelector('.tab-slider');
 
 function updateSlider(element) {
-    // Move the dark background to the clicked button's position
-    slider.style.width = `${element.offsetWidth}px`;
+     slider.style.width = `${element.offsetWidth}px`;
     slider.style.left = `${element.offsetLeft}px`;
 }
 
-// Set initial position
-updateSlider(document.querySelector('.tab-btn.active'));
+ updateSlider(document.querySelector('.tab-btn.active'));
 
 tabs.forEach(tab => {
     tab.addEventListener('click', (e) => {
-        // Remove active class from others
-        tabs.forEach(t => t.classList.remove('active'));
+         tabs.forEach(t => t.classList.remove('active'));
         
-        // Add active class to clicked
-        tab.classList.add('active');
+         tab.classList.add('active');
         
-        // Move the visual slider
-        updateSlider(tab);
+         updateSlider(tab);
 
-        // LOGIC: Change form behavior based on type
-        const type = tab.getAttribute('data-type');
+         const type = tab.getAttribute('data-type');
         console.log(`Navigating to: ${type} section`);
         
-        // You can add logic here to change price ranges 
-        // (e.g., lower ranges for Rent, higher for Buy)
+        
     });
+});
+
+
+
+
+
+
+
+
+
+
+// testimonial js
+
+const thumbs = document.querySelectorAll(".user-thumbs img");
+const contents = document.querySelectorAll(".testimonial-content");
+
+thumbs.forEach((img, index) => {
+
+    img.addEventListener("mouseenter", () => {
+
+        thumbs.forEach(t => t.classList.remove("active"));
+        contents.forEach(c => c.classList.remove("active"));
+
+        img.classList.add("active");
+        contents[index].classList.add("active");
+    });
+
 });

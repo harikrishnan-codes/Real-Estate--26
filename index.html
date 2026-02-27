@@ -8,6 +8,7 @@
 
     <link rel="icon" href="./bg remove.webp">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -46,12 +47,12 @@
             </div>
 
             <nav class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Properties</a>
-                <a href="#">Contact</a>
-                <a href="#">Dashboard</a>
-                <a class="sign" href="">Sign Up</a>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./properties.html">Properties</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./dashboard.html">Dashboard</a>
+                <a class="sign" href="./sign.html">Sign Up</a>
             </nav>
 
             <div class="hamburger" id="hamburger">
@@ -69,21 +70,18 @@
 
 
 
-    <section class="hero">
+    <section class="hero" data-aos="fade-up">
 
-        <!-- Background Video -->
         <video autoplay muted loop playsinline class="hero-video">
             <source src="./hero.mp4" type="video/mp4">
         </video>
 
         <div class="hero-overlay"></div>
 
-        <!-- HERO SLIDES -->
         <div class="hero">
 
             <div class="hero-slider">
 
-                <!-- Slide 1 -->
                 <div class="hero-slide active">
                     <h1>
                         The Most Flexible <br>
@@ -98,8 +96,8 @@
                     </p>
 
                     <div class="hero-buttons">
-                        <a href="#" class="btn-primary">Explore Properties</a>
-                        <a href="#" class="btn-outline">View Projects</a>
+                        <a href="./404.html" class="btn-primary">Explore Properties</a>
+                        <a href="./404.html" class="btn-outline">View Projects</a>
                     </div>
 
                     <div class="hero-stats">
@@ -114,7 +112,6 @@
                     </div>
                 </div>
 
-                <!-- Slide 2 -->
                 <div class="hero-slide">
                     <h1>
                         Discover Premium <br>
@@ -129,8 +126,8 @@
                     </p>
 
                     <div class="hero-buttons">
-                        <a href="#" class="btn-primary">Browse Listings</a>
-                        <a href="#" class="btn-outline">Contact Agent</a>
+                        <a href="./404.html" class="btn-primary">Browse Listings</a>
+                        <a href="./404.html" class="btn-outline">Contact Agent</a>
                     </div>
 
                     <div class="hero-stats">
@@ -145,7 +142,6 @@
                     </div>
                 </div>
 
-                <!-- Slide 3 -->
                 <div class="hero-slide">
                     <h1>
                         Smart Real Estate <br>
@@ -160,8 +156,8 @@
                     </p>
 
                     <div class="hero-buttons">
-                        <a href="#" class="btn-primary">Start Investing</a>
-                        <a href="#" class="btn-outline">Learn More</a>
+                        <a href="./404.html" class="btn-primary">Start Investing</a>
+                        <a href="./404.html" class="btn-outline">Learn More</a>
                     </div>
 
                     <div class="hero-stats">
@@ -176,7 +172,6 @@
                     </div>
                 </div>
 
-                <!-- Slide 4 -->
                 <div class="hero-slide">
                     <h1>
                         Trusted Experts <br>
@@ -191,8 +186,8 @@
                     </p>
 
                     <div class="hero-buttons">
-                        <a href="#" class="btn-primary">Get Consultation</a>
-                        <a href="#" class="btn-outline">Our Services</a>
+                        <a href="./404.html" class="btn-primary">Get Consultation</a>
+                        <a href="./404.html" class="btn-outline">Our Services</a>
                     </div>
 
                     <div class="hero-stats">
@@ -220,7 +215,7 @@
 
 
 
-    <section class="search-container">
+    <section class="search-container" data-aos="fade-down">
         <div class="search-wrapper">
             <div class="search-tabs">
                 <div class="tab-slider"></div>
@@ -229,11 +224,12 @@
                 <button class="tab-btn" data-type="sell">Sell</button>
             </div>
 
-            <form class="search-form">
+            <form class="search-form" action="./404.html" method="GET">
+
                 <div class="input-group">
-                    <label><i class="fas fa-map-marker-alt"></i> Location</label>
-                    <select class="custom-select">
-                        <option>Select Location</option>
+                    <label>Location</label>
+                    <select class="custom-select" required>
+                        <option value="" disabled selected>Select Location</option>
                         <option>New York, NY</option>
                         <option>Los Angeles, CA</option>
                         <option>Miami, FL</option>
@@ -241,9 +237,9 @@
                 </div>
 
                 <div class="input-group">
-                    <label><i class="fas fa-home"></i> Type</label>
-                    <select class="custom-select">
-                        <option>All Types</option>
+                    <label>Type</label>
+                    <select class="custom-select" required>
+                        <option value="" disabled selected>Select Type</option>
                         <option>Apartment</option>
                         <option>Villa</option>
                         <option>Penthouse</option>
@@ -251,8 +247,9 @@
                 </div>
 
                 <div class="input-group">
-                    <label><i class="fas fa-tag"></i> Price Range</label>
-                    <select class="custom-select">
+                    <label>Price Range</label>
+                    <select class="custom-select" required>
+                        <option value="" disabled selected>Select Price</option>
                         <option>$100k - $500k</option>
                         <option>$500k - $1M</option>
                         <option>$1M+</option>
@@ -260,8 +257,9 @@
                 </div>
 
                 <div class="input-group">
-                    <label><i class="fas fa-bed"></i> Beds</label>
-                    <select class="custom-select">
+                    <label>Beds</label>
+                    <select class="custom-select" required>
+                        <option value="" disabled selected>Select Beds</option>
                         <option>1+ Beds</option>
                         <option>2+ Beds</option>
                         <option>3+ Beds</option>
@@ -270,8 +268,8 @@
 
                 <button type="submit" class="search-btn">
                     <span>Search</span>
-                    <i class="fas fa-search"></i>
                 </button>
+
             </form>
         </div>
     </section>
@@ -285,7 +283,7 @@
 
 
 
-    <section class="about">
+    <section class="about" data-aos="zoom-in">
 
         <div class="about-container">
 
@@ -347,15 +345,15 @@
 
     <section class="categories">
 
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-right">
             <h2>Properties by Category</h2>
             <p>Explore different types of properties based on your needs.</p>
         </div>
 
-        <div class="category-grid">
+        <div class="category-grid" data-aos="fade-left">
 
             <div class="category-card">
-                <img src="./about.webp" alt="Apartments">
+                <img src="./c apartment.webp" alt="Apartments">
 
                 <div class="category-content">
                     <h3>Apartments</h3>
@@ -371,7 +369,7 @@
             </div>
 
             <div class="category-card">
-                <img src="./about.webp" alt="Houses">
+                <img src="./c house.webp" alt="Houses">
 
                 <div class="category-content">
                     <h3>Houses</h3>
@@ -386,9 +384,8 @@
                 </div>
             </div>
 
-            <!-- 8 -->
             <div class="category-card">
-                <img src="img8.jpg" alt="">
+                <img src="./c studios.webp" alt="">
                 <div class="category-content">
                     <h3>Studios</h3>
                     <span>9 Listings</span>
@@ -401,9 +398,8 @@
                 </div>
             </div>
 
-            <!-- 9 -->
             <div class="category-card">
-                <img src="img9.jpg" alt="">
+                <img src="./c commercial.webp" alt="">
                 <div class="category-content">
                     <h3>Commercial</h3>
                     <span>5 Listings</span>
@@ -416,9 +412,8 @@
                 </div>
             </div>
 
-            <!-- 3 -->
             <div class="category-card">
-                <img src="img3.jpg" alt="">
+                <img src="./condos.webp" alt="">
                 <div class="category-content">
                     <h3>Condos</h3>
                     <span>8 Listings</span>
@@ -431,9 +426,8 @@
                 </div>
             </div>
 
-            <!-- 4 -->
             <div class="category-card">
-                <img src="img4.jpg" alt="">
+                <img src="./villa 2.webp" alt="">
                 <div class="category-content">
                     <h3>Villas</h3>
                     <span>6 Listings</span>
@@ -446,9 +440,8 @@
                 </div>
             </div>
 
-            <!-- 5 -->
             <div class="category-card">
-                <img src="img5.jpg" alt="">
+                <img src="./c office.webp" alt="">
                 <div class="category-content">
                     <h3>Offices</h3>
                     <span>10 Listings</span>
@@ -461,9 +454,8 @@
                 </div>
             </div>
 
-            <!-- 6 -->
             <div class="category-card">
-                <img src="img6.jpg" alt="">
+                <img src="./c duplex.webp" alt="">
                 <div class="category-content">
                     <h3>Duplex</h3>
                     <span>4 Listings</span>
@@ -475,12 +467,8 @@
                     <p>2500 sqft</p>
                 </div>
             </div>
-
-
         </div>
-
         </div>
-
     </section>
 
 
@@ -490,7 +478,7 @@
 
 
 
-    <section class="services-container">
+    <section class="services-container" data-aos="fade-right">
         <div class="section-header">
             <span>Our Expertise</span>
             <h2>Elite Real Estate Services</h2>
@@ -586,9 +574,6 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </section>
 
@@ -600,7 +585,7 @@
 
 
 
-    <section class="featured">
+    <section class="featured" data-aos="fade-up">
 
         <div class="section-title">
             <h2>Featured Properties</h2>
@@ -609,7 +594,6 @@
 
         <div class="featured-grid">
 
-            <!-- Property Card 1 -->
             <div class="property-card">
 
                 <div class="property-img">
@@ -637,7 +621,6 @@
 
             </div>
 
-            <!-- Property Card 2 -->
             <div class="property-card">
 
                 <div class="property-img">
@@ -665,7 +648,6 @@
 
             </div>
 
-            <!-- Property Card 3 -->
             <div class="property-card">
 
                 <div class="property-img">
@@ -694,7 +676,6 @@
             </div>
 
 
-            <!-- Property Card 4 -->
             <div class="property-card">
 
                 <div class="property-img">
@@ -732,7 +713,7 @@
 
 
 
-    <section class="property-hero">
+    <section class="property-hero" data-aos="fade-down">
 
         <div class="hero-left">
             <div class="hero-card">
@@ -750,18 +731,204 @@
                     offering spacious living areas and premium finishes throughout.
                 </p>
 
-                <a href="#">Discover more →</a>
+                <a href="./404.html">Discover more →</a>
             </div>
         </div>
 
         <div class="hero-right">
-            <img src="./grid 1.webp" alt="">
-            <img src="./grid 2.webp" alt="">
-            <img src="./grid 3.webp" alt="">
-            <img src="./grid 4.webp" alt="">
+
+            <div class="img-box">
+                <img src="./grid 1.webp" alt="Living Room">
+                <div class="img-content">
+                    <h4>Luxury Living Room</h4>
+                    <p>Spacious design with modern interior aesthetics.</p>
+                </div>
+            </div>
+
+            <div class="img-box">
+                <img src="./grid 2.webp" alt="TV Area">
+                <div class="img-content">
+                    <h4>Entertainment Area</h4>
+                    <p>Comfortable TV lounge for family relaxation.</p>
+                </div>
+            </div>
+
+            <div class="img-box">
+                <img src="./grid 3.webp" alt="Dining Area">
+                <div class="img-content">
+                    <h4>Elegant Dining Space</h4>
+                    <p>Perfect setting for memorable gatherings.</p>
+                </div>
+            </div>
+
+            <div class="img-box">
+                <img src="./grid 4.webp" alt="Kitchen">
+                <div class="img-content">
+                    <h4>Modern Kitchen</h4>
+                    <p>Fully equipped modular kitchen design.</p>
+                </div>
+            </div>
+
         </div>
 
     </section>
+
+
+
+
+
+
+
+
+
+    <section class="premium-feature">
+        <div class="container" data-aos="zoom-in">
+            <div class="feature-grid">
+                <div class="feature-content">
+                    <span class="badge">Exclusive Portfolio</span>
+                    <h2>Prime Locations</h2>
+                    <p>Situated in the heart of the city’s most vibrant districts, within walking distance from top-tier
+                        amenities, fine dining, and cultural landmarks.</p>
+                    <ul class="amenity-list">
+                        <li><span>05 Min</span> - Central Business District</li>
+                        <li><span>10 Min</span> - Metro & Transit Hubs</li>
+                        <li><span>02 Min</span> - Luxury Retail Centers</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <div class="image-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=800&q=80"
+                        alt="Cityscape">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="testimonials" data-aos="zoom-in">
+
+        <div class="testimonial-overlay"></div>
+
+        <div class="testimonial-wrapper">
+
+            <div class="testimonial-left">
+
+                <h5 class="small-heading">STORIES OF<br>REFINED LIVING</h5>
+
+                <div class="testimonial-card">
+
+                    <div class="user-thumbs">
+                        <img src="./m2-testi.webp" data-id="0" class="active">
+                        <img src="./f1-testi.webp" data-id="1">
+                        <img src="./m3-testi.webp" data-id="2">
+                        <img src="./f3-testi.webp" data-id="3">
+                    </div>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p>Trusted by clients worldwide</p>
+
+                    <button onclick="window.location.href='./404.html'">Leave A Review</button>
+
+                </div>
+
+            </div>
+
+            <div class="testimonial-right">
+
+                <div class="testimonial-content active">
+                    <h2>Sustainability Has Never Felt This Elegant.</h2>
+                    <p>
+                        Luxury and sustainability rarely coexist — but they made it effortless.
+                        From eco-smart systems to sustainable materials, everything feels
+                        responsible yet opulent.
+                    </p>
+                    <div class="client-info">
+                        <h4>David Chen</h4>
+                        <span>Real Estate Investor</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-content">
+                    <h2>A Seamless Buying Experience.</h2>
+                    <p>
+                        The team guided us with transparency and expertise.
+                        The process was smooth and stress-free.
+                    </p>
+                    <div class="client-info">
+                        <h4>Maria Johnson</h4>
+                        <span>Property Buyer</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-content">
+                    <h2>Premium Properties Delivered.</h2>
+                    <p>
+                        Exceptional listings and strong ROI support.
+                        Highly professional service throughout.
+                    </p>
+                    <div class="client-info">
+                        <h4>Arjun Mehta</h4>
+                        <span>Entrepreneur</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-content">
+                    <h2>Highly Recommended Experts.</h2>
+                    <p>
+                        Honest advice and excellent investment planning.
+                        Truly a trusted real estate partner.
+                    </p>
+                    <div class="client-info">
+                        <h4>Sophia Lee</h4>
+                        <span>Investor</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="cta-luxury" data-aos="fade-up">
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+            <span class="cta-subtitle">Limited Opportunities Available</span>
+            <h2 class="cta-title">Your Private Sanctuary Awaits</h2>
+            <p class="cta-description">
+                Experience the pinnacle of modern living. Schedule a private viewing or
+                request a digital brochure to explore our exclusive floor plans.
+            </p>
+
+            <div class="cta-actions">
+                <a href="./404.html" class="btn-main">Schedule a Tour</a>
+                <a href="./404.html" class="btn-outline">Download Brochure</a>
+            </div>
+
+            <div class="cta-footer">
+                <p>Direct Inquiry: <span>+1 (800) 555-REAL</span></p>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -772,9 +939,8 @@
 
         <div class="footer-container">
 
-            <!-- About -->
             <div class="footer-col">
-                <h2 class="footer-logo">DreamHomes</h2>
+                <a class="footer-logo" href="#"><img src="./white.webp" alt="" width="150px"></a>
                 <p>
                     We provide premium real estate solutions with trusted service
                     and modern luxury properties worldwide.
@@ -788,19 +954,17 @@
                 </div>
             </div>
 
-            <!-- Quick Links -->
             <div class="footer-col">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Properties</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./properties.html">Properties</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
                 </ul>
             </div>
 
-            <!-- Services -->
             <div class="footer-col">
                 <h3>Our Services</h3>
                 <ul>
@@ -813,7 +977,6 @@
                 </ul>
             </div>
 
-            <!-- Contact -->
             <div class="footer-col">
                 <h3>Contact Info</h3>
                 <ul class="contact-info">
@@ -823,13 +986,12 @@
                 </ul>
             </div>
 
-            <!-- Newsletter -->
             <div class="footer-col">
                 <h3>Newsletter</h3>
                 <p>Subscribe for latest property updates.</p>
 
-                <form class="footer-form">
-                    <input type="email" placeholder="Your Email">
+                <form class="footer-form" action="./404.html" method="GET">
+                    <input type="email" placeholder="Your Email" required>
                     <button type="submit">
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
@@ -846,10 +1008,23 @@
 
 
 
-
-
-
     <script src="./script.js"></script>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,   // animation runs only once
+        });
+    </script>
+
+
+
 </body>
 
 </html>

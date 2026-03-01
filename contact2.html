@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="./contact2.css">
+    <link rel="icon" href="./bg remove.webp">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <nav class="navbar">
+            <a class="logo"><img src="./white.webp" alt="" width="150px"></a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="./home2.html">Home</a></li>
+                <li><a href="./luxury.html">Luxury Listings</a></li>
+                <li><a href="./invest.html">Investment</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact2.html">Contact</a></li>
+                <!-- <li><a href="#" class="add-btn">Add Listing</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <section class="sec-hero-section">
+    <canvas id="hero-canvas"></canvas>
+    
+    <div class="sec-hero-container" data-aos="fade-up">
+        <h1>Luxury Listings</h1>
+        <p class="hero-caption">"Your journey home begins with a vision. We combine local expertise with a global perspective to find the sanctuary you've been looking for."</p>
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="material-icons divider">double_arrow</span>
+            <a href="about.html" class="active">Luxury Listings</a>
+        </div>
+    </div>
+</section>
+    <section class="contact-hero">
+        <div class="hero-bg-container">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+                alt="Luxury Estate" class="ken-burns-img">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-text-content">
+            <span class="pre-title">Personalized Service</span>
+            <h1>Let’s Start Your <br><span class="serif-italic">New Chapter</span></h1>
+            <p>Whether you are buying, selling, or simply exploring the market, our team is here to guide you with
+                unwavering dedication.</p>
+            <div class="scroll-down-icon">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+    <section class="inquiry-suite" id="inquiry-trigger">
+    <div class="inquiry-container">
+        <div class="inquiry-identity">
+            <span class="tag">Direct Inquiry</span>
+            <h2>Let’s Discuss Your <span class="serif">Vision</span></h2>
+            <p>Our advisors are available for private consultations across all global time zones.</p>
+            
+            <div class="contact-methods">
+                <div class="method">
+                    <span class="material-icons">phone_iphone</span>
+                    <p>+1 (408) 555-0199</p>
+                </div>
+                <div class="method">
+                    <span class="material-icons">mail_outline</span>
+                    <p>concierge@samresidences.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="inquiry-form-wrapper">
+            <form id="contact-form">
+                <div class="input-field animate-field">
+                    <input type="text" id="name" required>
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="input-field animate-field">
+                    <input type="email" id="email" required>
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="input-field animate-field">
+                    <select id="interest" required>
+                        <option value="" disabled selected></option>
+                        <option value="buying">Buying a Home</option>
+                        <option value="selling">Selling a Property</option>
+                        <option value="valuation">Market Valuation</option>
+                    </select>
+                    <label for="interest">Nature of Inquiry</label>
+                </div>
+                <div class="input-field animate-field">
+                    <textarea id="message" rows="4" required></textarea>
+                    <label for="message">How can we assist you?</label>
+                </div>
+                <button type="submit" class="btn-submit-premium animate-field">
+                    <span>Send Inquiry</span>
+                    <i class="material-icons">east</i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="office-gallery">
+    <div class="gallery-intro">
+        <span class="sub-line">Our Presence</span>
+        <h2>Visit Our <span class="serif">Studios</span></h2>
+    </div>
+
+    <div class="office-grid">
+        <div class="office-card">
+            <div class="office-image">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="San Jose Office">
+                <div class="office-overlay">
+                    <div class="overlay-content">
+                        <h3>San Jose</h3>
+                        <p>123 Silicon Valley Way, Suite 100<br>San Jose, CA 95113</p>
+                        <a href="https://maps.google.com" target="_blank" class="map-link">View on Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="office-card">
+            <div class="office-image">
+                <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80" alt="San Francisco Office">
+                <div class="office-overlay">
+                    <div class="overlay-content">
+                        <h3>San Francisco</h3>
+                        <p>456 Embarcadero Center<br>San Francisco, CA 94111</p>
+                        <a href="https://maps.google.com" target="_blank" class="map-link">View on Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="office-card">
+            <div class="office-image">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Los Angeles Office">
+                <div class="office-overlay">
+                    <div class="overlay-content">
+                        <h3>Los Angeles</h3>
+                        <p>789 Beverly Hills Blvd<br>Los Angeles, CA 90210</p>
+                        <a href="https://maps.google.com" target="_blank" class="map-link">View on Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="department-concierge">
+    <div class="concierge-header">
+        <span class="gold-tag">Direct Channels</span>
+        <h2>Expert <span class="serif">Advisory</span></h2>
+        <p>Connect directly with our specialized departments for streamlined assistance.</p>
+    </div>
+
+    <div class="concierge-grid">
+        <div class="concierge-card">
+            <div class="card-icon">
+                <span class="material-icons">real_estate_agent</span>
+            </div>
+            <h3>Residential Sales</h3>
+            <p>Inquire about our exclusive listings or schedule a private viewing.</p>
+            <a href="mailto:sales@samresidences.com" class="direct-mail">sales@samresidences.com</a>
+        </div>
+
+        <div class="concierge-card">
+            <div class="card-icon">
+                <span class="material-icons">insights</span>
+            </div>
+            <h3>Investment & Equity</h3>
+            <p>Strategic advice for portfolio growth and commercial acquisitions.</p>
+            <a href="mailto:invest@samresidences.com" class="direct-mail">invest@samresidences.com</a>
+        </div>
+
+        <div class="concierge-card">
+            <div class="card-icon">
+                <span class="material-icons">gavel</span>
+            </div>
+            <h3>Legal & Escrow</h3>
+            <p>Support for transaction security, contracts, and global compliance.</p>
+            <a href="mailto:legal@samresidences.com" class="direct-mail">legal@samresidences.com</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <a class="footer-logo" href="#"><img src="./white.webp" alt="" width="150px"></a>
+                <p>
+                    We provide premium real estate solutions with trusted service
+                    and modern luxury properties worldwide.
+                </p>
+
+                <div class="social-icons">
+                    <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+                    <a href="./error.html"><i class="fab fa-instagram"></i></a>
+                    <a href="./error.html"><i class="fab fa-twitter"></i></a>
+                    <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./home2.html">Home</a></li>
+                    <li><a href="./luxury.html">Luxury Listings</a></li>
+                    <li><a href="./invest.html">Investment</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact2.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="./error.html">Residential Sales</a></li>
+                    <li><a href="./error.html">Commercial Leasing</a></li>
+                    <li><a href="./error.html">Property Rentals</a></li>
+                    <li><a href="./error.html">Investment Advisory</a></li>
+                    <li><a href="./error.html">Property Management</a></li>
+                    <li><a href="./error.html">Legal Documentation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> New York, USA</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 234 567 890</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@dreamhomes.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe for latest property updates.</p>
+
+                <form class="footer-form" action="./error.html" method="GET">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 DreamHomes. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+<section class="magnetic-connect">
+    <div class="connect-container">
+        <div class="support-box">
+            <span class="mini-tag">Immediate Support</span>
+            <h3>Need a direct line?</h3>
+            <p>Our concierge team is currently online to assist with your urgent inquiries.</p>
+            <a href="tel:+14085550199" class="btn-call">
+                <span class="material-icons">call</span> Call Now
+            </a>
+        </div>
+
+        <div class="social-hub">
+            <p class="social-title">Follow the Journey</p>
+            <div class="icons-wrapper">
+                <div class="magnetic-item" data-strength="30">
+                    <a href="#" class="social-circle">IG</a>
+                </div>
+                <div class="magnetic-item" data-strength="30">
+                    <a href="#" class="social-circle">LI</a>
+                </div>
+                <div class="magnetic-item" data-strength="30">
+                    <a href="#" class="social-circle">FB</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-top-wrap">
+            <button class="magnetic-item scroll-btn" data-strength="50" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <span class="material-icons">north</span>
+            </button>
+            <p>Back to Top</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="contact2.js"></script>
+</body>
+
+</html>

@@ -3,8 +3,7 @@ function toggleForm(formType) {
     const signup = document.getElementById('signup-form');
     const forgot = document.getElementById('forgot-form');
 
-    // Add fade-out effect
-    [login, signup, forgot].forEach(f => f.classList.add('hidden'));
+     [login, signup, forgot].forEach(f => f.classList.add('hidden'));
 
     if (formType === 'login') login.classList.remove('hidden');
     if (formType === 'signup') signup.classList.remove('hidden');
@@ -30,8 +29,7 @@ function validateForm(event, type) {
     if (!isValid) {
         alert("Plz fill the details");
     } else {
-        // Success: Redirect to existing 404 page
-        window.location.href = "404.html"; 
+         window.location.href = "404.html"; 
     }
 
     return false;

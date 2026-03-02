@@ -448,6 +448,7 @@ body.menu-open {
 .location-teleporter {
     padding: 100px 5%;
     background: var(--white);
+    overflow-x: hidden;
 }
 
 .teleport-container {
@@ -596,6 +597,7 @@ body.menu-open {
     padding: 100px 5%;
     background-color: var(--bg-soft);
     text-align: center;
+    overflow-x: hidden;
 }
 
 .support-header {
@@ -728,6 +730,7 @@ body.menu-open {
 .faq-cta-section {
     padding: 100px 5%;
     background-color: var(--white);
+    overflow-x: hidden;
 }
 
 .faq-container {
@@ -749,8 +752,7 @@ body.menu-open {
     color: var(--light);
 }
 
-/* --- Accordion Styling --- */
-.acc-item {
+ .acc-item {
     border-bottom: 1px solid #eee;
     margin-bottom: 10px;
 }
@@ -891,6 +893,7 @@ body.menu-open {
     background: url("./testimonial.webp") center/cover no-repeat;
     color: var(--white);
     overflow: hidden;
+    overflow-x: hidden;
 }
 
 .testimonial-overlay {

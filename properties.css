@@ -453,16 +453,11 @@ body.menu-open {
 
 
 
-:root {
-    --white: rgb(255, 255, 255);
-    --dark: rgb(0, 66, 116);
-    --light: rgb(82, 196, 249);
-}
-
 .properties-accordion {
     padding: 80px 0;
     background: #fff;
     overflow: hidden;
+    overflow-x: hidden;
 }
 
 .section-intro {
@@ -497,8 +492,7 @@ body.menu-open {
     border-radius: 20px;
     position: relative;
     flex: 0.7;
-    /* Default collapsed width */
-    cursor: pointer;
+     cursor: pointer;
     transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
     filter: grayscale(0.5);
 }
@@ -514,13 +508,11 @@ body.menu-open {
 
 .acc-panel.active {
     flex: 5;
-    /* Expanded width */
-    cursor: default;
+     cursor: default;
     filter: grayscale(0);
 }
 
-/* Content inside the panel */
-.acc-content {
+ .acc-content {
     position: absolute;
     bottom: 40px;
     left: 40px;
@@ -565,18 +557,15 @@ body.menu-open {
     border-radius: 5px;
 }
 
-/* --- 768px MEDIA QUERY --- */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .accordion-container {
         flex-direction: column;
-        /* Stack vertically on mobile */
-        height: 900px;
+         height: 900px;
     }
 
     .acc-panel {
         flex: 1 !important;
-        /* Fixed height on mobile */
-        width: 100%;
+         width: 100%;
     }
 
     .acc-content {
@@ -593,8 +582,7 @@ body.menu-open {
         display: none;
     }
 
-    /* Hide description to save space */
-}
+ }
 
 
 
@@ -608,12 +596,11 @@ body.menu-open {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    /* Stacks header on top of the grid */
-    align-items: center;
+     align-items: center;
+     overflow-x: hidden;
 }
 
-/* --- New Header Styles --- */
-.section-header {
+ .section-header {
     text-align: center;
     max-width: 700px;
     margin-bottom: 80px;
@@ -653,8 +640,7 @@ body.menu-open {
     margin: 30px auto 0;
 }
 
-/* --- Grid Wrapper Styles --- */
-.specs-wrapper {
+ .specs-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
@@ -695,8 +681,7 @@ body.menu-open {
     transform: translateY(-5px);
 }
 
-/* Center Image Styles */
-.specs-center {
+ .specs-center {
     position: relative;
     display: flex;
     justify-content: center;
@@ -722,8 +707,7 @@ body.menu-open {
     position: absolute;
     width: 370px;
     height: 370px;
-    /* border: 2px solid var(--light); */
-    border-radius: 50%;
+     border-radius: 50%;
     animation: pulseEffect 2.5s infinite;
     z-index: 1;
 }
@@ -740,8 +724,7 @@ body.menu-open {
     }
 }
 
-/* --- 768px MEDIA QUERY --- */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .section-header h2 {
         font-size: 32px;
     }
@@ -783,6 +766,7 @@ body.menu-open {
 .prop-gallery {
     padding: 80px 5%;
     background: var(--white);
+    overflow-x: hidden;
 }
 
 .gallery-header {
@@ -799,8 +783,7 @@ body.menu-open {
     color: var(--light);
 }
 
-/* Grid Layout */
-.gallery-grid {
+ .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -814,8 +797,7 @@ body.menu-open {
     border-radius: 8px;
     overflow: hidden;
     display: none;
-    /* Hidden by default, JS adds .show */
-    opacity: 0;
+     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
@@ -848,8 +830,7 @@ body.menu-open {
     transform: scale(1.1);
 }
 
-/* 768px Media Query */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: 1fr;
     }
@@ -874,6 +855,7 @@ body.menu-open {
     background: url("./testimonial.webp") center/cover no-repeat;
     color: var(--white);
     overflow: hidden;
+    overflow-x: hidden;
 }
 
 .testimonial-overlay {

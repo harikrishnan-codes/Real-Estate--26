@@ -1,71 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./sign.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
     <div class="auth-wrapper">
-    <div class="auth-bg-animation">
-        <div class="house-shape"></div>
-        <div class="house-shape"></div>
+        <div class="auth-bg-animation" data-aos="fade-up">
+            <div class="house-shape"></div>
+            <div class="house-shape"></div>
+        </div>
+
+        <div class="auth-container" id="auth-container" data-aos="fade-down">
+            <div class="form-box login" id="login-form" data-aos="fade-right">
+                <h2 data-aos="fade-left">Welcome <span class="accent">Back</span></h2>
+                <p>Access your premium real estate dashboard.</p>
+                <form onsubmit="return validateForm(event, 'login')">
+                    <div class="input-group">
+                        <input type="email" id="login-email" placeholder="Email Address">
+                        <small class="error-msg">Please enter a valid email</small>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="login-pass" placeholder="Password">
+                        <small class="error-msg">Please enter your password</small>
+                    </div>
+                    <div class="form-links">
+                        <a href="javascript:void(0)" onclick="toggleForm('forgot')">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="auth-btn">Sign In</button>
+                </form>
+                <p class="switch-text">New here? <a href="javascript:void(0)" onclick="toggleForm('signup')">Create
+                        Account</a></p>
+            </div>
+
+            <div class="form-box signup hidden" id="signup-form">
+                <h2>Join the <span class="accent">Elite</span></h2>
+                <p>Start your journey into luxury living.</p>
+                <form onsubmit="return validateForm(event, 'signup')">
+                    <div class="input-group">
+                        <input type="text" id="signup-name" placeholder="Full Name">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="signup-email" placeholder="Email Address">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="signup-pass" placeholder="Create Password">
+                    </div>
+                    <button type="submit" class="auth-btn">Register</button>
+                </form>
+                <p class="switch-text">Already a member? <a href="javascript:void(0)"
+                        onclick="toggleForm('login')">Login</a></p>
+            </div>
+
+            <div class="form-box forgot hidden" id="forgot-form">
+                <h2>Reset <span class="accent">Password</span></h2>
+                <p>Enter your email to receive a recovery link.</p>
+                <form onsubmit="return validateForm(event, 'forgot')">
+                    <div class="input-group">
+                        <input type="email" id="forgot-email" placeholder="Email Address">
+                    </div>
+                    <button type="submit" class="auth-btn">Send Link</button>
+                </form>
+                <p class="switch-text"><a href="javascript:void(0)" onclick="toggleForm('login')">Back to Login</a></p>
+            </div>
+        </div>
     </div>
 
-    <div class="auth-container" id="auth-container">
-        <div class="form-box login" id="login-form">
-            <h2>Welcome <span class="accent">Back</span></h2>
-            <p>Access your premium real estate dashboard.</p>
-            <form onsubmit="return validateForm(event, 'login')">
-                <div class="input-group">
-                    <input type="email" id="login-email" placeholder="Email Address">
-                    <small class="error-msg">Please enter a valid email</small>
-                </div>
-                <div class="input-group">
-                    <input type="password" id="login-pass" placeholder="Password">
-                    <small class="error-msg">Please enter your password</small>
-                </div>
-                <div class="form-links">
-                    <a href="javascript:void(0)" onclick="toggleForm('forgot')">Forgot Password?</a>
-                </div>
-                <button type="submit" class="auth-btn">Sign In</button>
-            </form>
-            <p class="switch-text">New here? <a href="javascript:void(0)" onclick="toggleForm('signup')">Create Account</a></p>
-        </div>
+    <script src="sign.js"></script>
 
-        <div class="form-box signup hidden" id="signup-form">
-            <h2>Join the <span class="accent">Elite</span></h2>
-            <p>Start your journey into luxury living.</p>
-            <form onsubmit="return validateForm(event, 'signup')">
-                <div class="input-group">
-                    <input type="text" id="signup-name" placeholder="Full Name">
-                </div>
-                <div class="input-group">
-                    <input type="email" id="signup-email" placeholder="Email Address">
-                </div>
-                <div class="input-group">
-                    <input type="password" id="signup-pass" placeholder="Create Password">
-                </div>
-                <button type="submit" class="auth-btn">Register</button>
-            </form>
-            <p class="switch-text">Already a member? <a href="javascript:void(0)" onclick="toggleForm('login')">Login</a></p>
-        </div>
 
-        <div class="form-box forgot hidden" id="forgot-form">
-            <h2>Reset <span class="accent">Password</span></h2>
-            <p>Enter your email to receive a recovery link.</p>
-            <form onsubmit="return validateForm(event, 'forgot')">
-                <div class="input-group">
-                    <input type="email" id="forgot-email" placeholder="Email Address">
-                </div>
-                <button type="submit" class="auth-btn">Send Link</button>
-            </form>
-            <p class="switch-text"><a href="javascript:void(0)" onclick="toggleForm('login')">Back to Login</a></p>
-        </div>
-    </div>
-</div>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,   
+        });
+    </script>
 
-<script src="sign.js"></script>
+    
 </body>
+
 </html>

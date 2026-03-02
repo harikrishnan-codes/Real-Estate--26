@@ -1240,10 +1240,6 @@ body.menu-open {
     color: var(--light);
 }
 
-.social-icons {
-    /* margin-top: 20px; */
-}
-
 .social-icons a {
     display: inline-block;
     width: 35px;
@@ -1355,9 +1351,12 @@ body.menu-open {
 
 }
 
-/* ===========================
-   DASHBOARD STYLES
-   =========================== */
+
+
+
+
+
+/*== DASHBOARD STYLES ==*/
 
 .dashboard-section {
     padding: 80px 5%;
@@ -1370,8 +1369,7 @@ body.menu-open {
     margin: 0 auto;
 }
 
-/* Dashboard Grid - Quick Stats */
-.dashboard-grid {
+ .dashboard-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
@@ -1420,8 +1418,7 @@ body.menu-open {
     color: var(--light);
 }
 
-/* Recent Activity */
-.recent-activity {
+ .recent-activity {
     background: var(--white);
     padding: 30px;
     border-radius: 15px;
@@ -1463,8 +1460,7 @@ body.menu-open {
     border-bottom: none;
 }
 
-/* Favorites Section */
-.favorites-section {
+ .favorites-section {
     background: var(--white);
     padding: 30px;
     border-radius: 15px;
@@ -1514,8 +1510,7 @@ body.menu-open {
     padding: 0 15px 15px;
 }
 
-/* Dashboard Responsive */
-@media (max-width: 992px) {
+ @media (max-width: 992px) {
     .dashboard-grid {
         grid-template-columns: repeat(2, 1fr);
     }

@@ -41,26 +41,26 @@ function init() {
 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
+
     particles.forEach((p, index) => {
         p.x += p.speedX;
         p.y += p.speedY;
 
-         if (p.x > canvas.width || p.x < 0) p.speedX *= -1;
+        if (p.x > canvas.width || p.x < 0) p.speedX *= -1;
         if (p.y > canvas.height || p.y < 0) p.speedY *= -1;
 
-         ctx.fillStyle = 'rgba(212, 163, 115, 0.5)';  
+        ctx.fillStyle = 'rgba(212, 163, 115, 0.5)';
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
         ctx.fill();
 
-         for (let j = index; j < particles.length; j++) {
+        for (let j = index; j < particles.length; j++) {
             const dx = p.x - particles[j].x;
             const dy = p.y - particles[j].y;
             const distance = Math.sqrt(dx * dx + dy * dy);
 
             if (distance < 100) {
-                ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distance/100})`;
+                ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distance / 100})`;
                 ctx.lineWidth = 0.5;
                 ctx.beginPath();
                 ctx.moveTo(p.x, p.y);
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Apply smooth transform
         const finalMove = movePercent * -maxMove;
-        
+
         track.style.transform = `translateX(${finalMove}px)`;
         track.style.transition = "transform 1.5s cubic-bezier(0.165, 0.84, 0.44, 1)";
     });
@@ -133,7 +133,7 @@ function updateFocus(element) {
         mainImg.src = element.getAttribute('data-img') + "?auto=format&fit=crop&w=1200&q=80";
         title.innerText = element.getAttribute('data-title');
         desc.innerText = element.getAttribute('data-desc');
-        
+
         mainImg.style.opacity = '1';
         mainImg.style.transform = 'scale(1)';
     }, 400);
@@ -167,7 +167,7 @@ function closeLightbox() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const items = document.querySelectorAll('.masonry-item');
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {

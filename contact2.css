@@ -3,23 +3,9 @@
     --white: #fff;
     --black: black;
     --text: #555;
-}
-
-
-:root {
-    --gold: #d4af37;
     --charcoal: #1a1a1a;
     --soft-white: #fdfdfd;
 }
-
-:root {
-    --gold: #d4af37;
-    --white: #fff;
-    --black: black;
-    --text: #555;
-}
-
-
 
 * {
     margin: 0;
@@ -28,12 +14,7 @@
     font-family: Arial, sans-serif;
 }
 
-
-
-
-/* ================= NAVBAR ================= */
-
-header{
+header {
     width: 100%;
     position: fixed;
     top: 0;
@@ -42,7 +23,7 @@ header{
     z-index: 1000;
 }
 
-.navbar{
+.navbar {
     max-width: 1200px;
     margin: auto;
     padding: 15px 20px;
@@ -51,54 +32,48 @@ header{
     align-items: center;
 }
 
-/* Logo */
-.logo img{
+.logo img {
     display: block;
 }
 
-/* Nav Links */
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
     gap: 30px;
 }
 
-.nav-links li a{
+.nav-links li a {
     text-decoration: none;
     color: var(--white);
     font-size: 15px;
     transition: 0.3s;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     color: var(--gold);
 }
 
-/* ================= HAMBURGER ================= */
-
-.hamburger{
-    display: none;   /* Hide in desktop */
+.hamburger {
+    display: none;
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
 }
 
-.hamburger span{
+.hamburger span {
     width: 25px;
     height: 3px;
     background: var(--white);
     transition: 0.3s;
 }
 
-/* ================= MOBILE VIEW ================= */
+@media (max-width: 768px) {
 
-@media (max-width: 768px){
-
-    .hamburger{
-        display: flex;   /* Show hamburger */
+    .hamburger {
+        display: flex;
     }
 
-    .nav-links{
+    .nav-links {
         position: absolute;
         top: 100%;
         left: 0;
@@ -109,11 +84,11 @@ header{
         align-items: center;
         gap: 60px;
         padding: 20px 0;
-        display: none;   /* Hide initially */
+        display: none;
     }
 
-    .nav-links.active{
-        display: flex;   /* Show when active */
+    .nav-links.active {
+        display: flex;
     }
 
 }
@@ -124,7 +99,7 @@ header{
 
 
 
- .sec-hero-section {
+.sec-hero-section {
     position: relative;
     height: 60vh;
     width: 100%;
@@ -132,11 +107,11 @@ header{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: #1a1a1a;  
+    background: #1a1a1a;
     color: #fff;
 }
 
- #hero-canvas {
+#hero-canvas {
     position: absolute;
     top: 0;
     left: 0;
@@ -145,7 +120,7 @@ header{
     z-index: 1;
 }
 
- .sec-hero-container {
+.sec-hero-container {
     position: relative;
     z-index: 10;
     text-align: center;
@@ -168,7 +143,7 @@ header{
     font-weight: 300;
 }
 
- .breadcrumb {
+.breadcrumb {
     display: inline-flex;
     align-items: center;
     background: rgba(255, 255, 255, 0.05);
@@ -184,8 +159,14 @@ header{
     transition: 0.3s;
 }
 
-.breadcrumb a:hover { color:var(--gold); }
-.breadcrumb a.active { color: var(--gold); font-weight: bold; }
+.breadcrumb a:hover {
+    color: var(--gold);
+}
+
+.breadcrumb a.active {
+    color: var(--gold);
+    font-weight: bold;
+}
 
 .divider {
     font-size: 18px;
@@ -193,7 +174,7 @@ header{
     color: rgba(255, 255, 255, 0.3);
 }
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     .sec-hero-section {
         height: 50vh;
         margin-top: 60px;
@@ -216,7 +197,11 @@ header{
 
 
 
-/* Container & Base Styles */
+
+
+
+
+
 .contact-hero {
     position: relative;
     height: 80vh;
@@ -229,8 +214,7 @@ header{
     font-family: 'Inter', sans-serif;
 }
 
-/* Background Animation (Ken Burns) */
-.hero-bg-container {
+ .hero-bg-container {
     position: absolute;
     inset: 0;
     z-index: 1;
@@ -257,11 +241,9 @@ header{
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
-    /* Darkens the image for text readability */
-}
+ }
 
-/* Text Fade-In Animation */
-.hero-text-content {
+ .hero-text-content {
     position: relative;
     z-index: 2;
     padding: 0 20px;
@@ -312,8 +294,7 @@ header{
     }
 }
 
-/* Scroll Icon Animation */
-.scroll-down-icon {
+ .scroll-down-icon {
     margin-top: 50px;
     width: 30px;
     height: 50px;
@@ -348,8 +329,7 @@ header{
     }
 }
 
-/* --- 768px Media Query --- */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .contact-hero {
         height: 70vh;
     }
@@ -388,8 +368,7 @@ header{
 
 .inquiry-identity .tag {
     color: #d4af37;
-    /* Premium Gold Accent */
-    text-transform: uppercase;
+     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 13px;
     font-weight: 700;
@@ -408,13 +387,11 @@ header{
     margin-bottom: 40px;
 }
 
-/* --- Floating Label Logic --- */
-.input-field {
+ .input-field {
     position: relative;
     margin-bottom: 35px;
     opacity: 0;
-    /* Hidden initially for JS animation */
-    transform: translateY(20px);
+     transform: translateY(20px);
 }
 
 .input-field input,
@@ -439,8 +416,7 @@ header{
     transition: 0.3s ease all;
 }
 
-/* Label Animation when focused or filled */
-.input-field input:focus~label,
+ .input-field input:focus~label,
 .input-field input:valid~label,
 .input-field textarea:focus~label,
 .input-field textarea:valid~label,
@@ -456,8 +432,7 @@ header{
     border-bottom: 1px solid #1a1a1a;
 }
 
-/* Premium Button */
-.btn-submit-premium {
+ .btn-submit-premium {
     background: #1a1a1a;
     color: #fff;
     padding: 20px 40px;
@@ -475,8 +450,7 @@ header{
     padding-left: 50px;
 }
 
-/* --- 768px MEDIA QUERY --- */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .inquiry-container {
         grid-template-columns: 1fr;
         gap: 50px;
@@ -516,8 +490,7 @@ header{
     letter-spacing: 3px;
     font-size: 13px;
     color: #d4af37;
-    /* Gold Accent */
-    font-weight: 700;
+     font-weight: 700;
     margin-bottom: 15px;
 }
 
@@ -527,8 +500,7 @@ header{
     color: #1a1a1a;
 }
 
-/* --- Grid Logic --- */
-.office-grid {
+ .office-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -540,8 +512,7 @@ header{
     position: relative;
     overflow: hidden;
     border-radius: 4px;
-    /* Minimalist sharp corners */
-    background: #000;
+     background: #000;
 }
 
 .office-image {
@@ -558,8 +529,7 @@ header{
     transition: opacity 0.5s, transform 0.8s;
 }
 
-/* --- The Slide-Up Overlay --- */
-.office-overlay {
+ .office-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(26, 26, 26, 0.9) 0%, transparent 100%);
@@ -568,8 +538,7 @@ header{
     padding: 40px;
     text-align: left;
     transform: translateY(100px);
-    /* Partially hidden */
-    transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+     transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1);
 }
 
 .overlay-content h3 {
@@ -601,8 +570,7 @@ header{
     transition: opacity 0.5s 0.3s;
 }
 
-/* --- Hover States --- */
-.office-card:hover .office-image img {
+ .office-card:hover .office-image img {
     transform: scale(1.1);
     opacity: 0.6;
 }
@@ -616,8 +584,7 @@ header{
     opacity: 1;
 }
 
-/* --- 768px MEDIA QUERY --- */
-@media (max-width: 992px) {
+ @media (max-width: 992px) {
     .office-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -636,8 +603,7 @@ header{
         font-size: 2.2rem;
     }
 
-    /* Reveal info by default on mobile since there is no hover */
-    .office-overlay {
+     .office-overlay {
         transform: translateY(0);
     }
 
@@ -680,8 +646,7 @@ header{
     color: #1a1a1a;
 }
 
-/* --- Concierge Grid --- */
-.concierge-grid {
+ .concierge-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -738,8 +703,7 @@ header{
     transition: 0.3s;
 }
 
-/* --- Hover Animation --- */
-.concierge-card:hover {
+ .concierge-card:hover {
     transform: translateY(-10px);
     background: #fff;
     border-color: #d4af37;
@@ -751,8 +715,7 @@ header{
     color: #fff;
 }
 
-/* --- 768px Media Query --- */
-@media (max-width: 992px) {
+ @media (max-width: 992px) {
     .concierge-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -782,8 +745,7 @@ header{
 .magnetic-connect {
     padding: 100px 5%;
     background-color: #1a1a1a;
-    /* Deep Charcoal */
-    color: #fff;
+     color: #fff;
     text-align: center;
 }
 
@@ -796,8 +758,7 @@ header{
     gap: 80px;
 }
 
-/* Support Box */
-.support-box {
+ .support-box {
     background: #252525;
     padding: 40px;
     border-radius: 15px;
@@ -830,8 +791,7 @@ header{
     color: #1a1a1a;
 }
 
-/* Social Circles */
-.icons-wrapper {
+ .icons-wrapper {
     display: flex;
     gap: 30px;
     margin-top: 30px;
@@ -857,8 +817,7 @@ header{
     color: #d4af37;
 }
 
-/* Scroll Button */
-.scroll-btn {
+ .scroll-btn {
     width: 80px;
     height: 80px;
     background: #d4af37;
@@ -869,8 +828,7 @@ header{
     margin-bottom: 10px;
 }
 
-/* --- 768px MEDIA QUERY --- */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .magnetic-connect {
         padding: 60px 20px;
     }

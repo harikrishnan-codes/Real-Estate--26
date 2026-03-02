@@ -15,6 +15,22 @@ hamburger.addEventListener("click", function () {
 
 
 
+// dropdown js
+
+const dropdown = document.querySelector(".dropdown");
+
+dropdown.addEventListener("click", function (e) {
+    e.stopPropagation();
+    dropdown.classList.toggle("active");
+});
+
+document.addEventListener("click", function () {
+    dropdown.classList.remove("active");
+});
+
+
+
+
 
 
 
@@ -98,24 +114,24 @@ const tabs = document.querySelectorAll('.tab-btn');
 const slider = document.querySelector('.tab-slider');
 
 function updateSlider(element) {
-     slider.style.width = `${element.offsetWidth}px`;
+    slider.style.width = `${element.offsetWidth}px`;
     slider.style.left = `${element.offsetLeft}px`;
 }
 
- updateSlider(document.querySelector('.tab-btn.active'));
+updateSlider(document.querySelector('.tab-btn.active'));
 
 tabs.forEach(tab => {
     tab.addEventListener('click', (e) => {
-         tabs.forEach(t => t.classList.remove('active'));
-        
-         tab.classList.add('active');
-        
-         updateSlider(tab);
+        tabs.forEach(t => t.classList.remove('active'));
 
-         const type = tab.getAttribute('data-type');
+        tab.classList.add('active');
+
+        updateSlider(tab);
+
+        const type = tab.getAttribute('data-type');
         console.log(`Navigating to: ${type} section`);
-        
-        
+
+
     });
 });
 

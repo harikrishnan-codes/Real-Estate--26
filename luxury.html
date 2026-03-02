@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./luxury.css">
     <link rel="icon" href="./bg remove.webp">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 
 <body>
@@ -42,19 +42,20 @@
 
 
     <section class="sec-hero-section">
-    <canvas id="hero-canvas"></canvas>
-    
-    <div class="sec-hero-container" data-aos="fade-up">
-        <h1>Luxury Listings</h1>
-        <p class="hero-caption">"Your journey home begins with a vision. We combine local expertise with a global perspective to find the sanctuary you've been looking for."</p>
+        <canvas id="hero-canvas"></canvas>
 
-        <div class="breadcrumb">
-            <a href="index.html">Home</a>
-            <span class="material-icons divider">double_arrow</span>
-            <a href="about.html" class="active">Luxury Listings</a>
+        <div class="sec-hero-container" data-aos="fade-up">
+            <h1>Luxury Listings</h1>
+            <p class="hero-caption">"Your journey home begins with a vision. We combine local expertise with a global
+                perspective to find the sanctuary you've been looking for."</p>
+
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="material-icons divider">double_arrow</span>
+                <a href="about.html" class="active">Luxury Listings</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -69,7 +70,7 @@
                 <p>A curated selection of the world's most prestigious estates, where every detail is a masterpiece of
                     design and comfort.</p>
                 <div class="hero-action">
-                    <a href="#collection" class="btn-luxe">Explore Collection</a>
+                    <a href="./error.html" class="btn-luxe">Explore Collection</a>
                     <span class="price-start">From $4.5M</span>
                 </div>
             </div>
@@ -154,8 +155,7 @@
 
         <div class="interactive-map-container">
             <div class="map-wrapper">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80"
-                    alt="Estate Layout">
+                <img src="./12.jpg" alt="Estate Layout">
 
                 <div class="hotspot hs-living">
                     <div class="hotspot-dot"></div>
@@ -200,7 +200,7 @@
 
     <section class="parallax-quote-section" id="parallax-trigger">
         <div class="parallax-bg-container">
-            <img src="./c house.webp" alt="Luxury Detail" id="parallax-img">
+            <img src="./contact.webp" alt="Luxury Detail" id="parallax-img">
             <div class="parallax-overlay"></div>
         </div>
 
@@ -229,12 +229,10 @@
 
             <div class="video-window">
                 <div class="video-poster">
-                    <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1600&q=80"
-                        alt="Estate Lifestyle">
-                    <div class="play-trigger">
-                        <span class="material-icons">play_arrow</span>
-                        <div class="ripple"></div>
-                    </div>
+                    <video autoplay muted loop playsinline class="bg-video">
+                        <source src="./hero.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
 
                 <div class="vignette-caption">
@@ -267,7 +265,7 @@
             <h2>Arrange a <span class="italic-serif">Private</span> Showing</h2>
             <p>Experience the estate in person. Our advisors provide tailored tours for qualified principals.</p>
 
-            <form class="luxe-form">
+            <form class="luxe-form" action="./error.html" method="GET">
                 <div class="form-row">
                     <input type="text" placeholder="Full Name" required>
                     <input type="email" placeholder="Email Address" required>
@@ -368,6 +366,19 @@
 
 
     <script src="./luxury.js"></script>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+
+
 </body>
 
 </html>

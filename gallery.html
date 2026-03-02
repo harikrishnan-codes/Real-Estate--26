@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./gallery.css">
     <link rel="icon" href="./bg remove.webp">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
@@ -42,78 +44,54 @@
 
 
     <section class="sec-hero-section">
-    <canvas id="hero-canvas"></canvas>
-    
-    <div class="sec-hero-container" data-aos="fade-up">
-        <h1>Luxury Listings</h1>
-        <p class="hero-caption">"Your journey home begins with a vision. We combine local expertise with a global perspective to find the sanctuary you've been looking for."</p>
+        <canvas id="hero-canvas"></canvas>
 
-        <div class="breadcrumb">
-            <a href="index.html">Home</a>
-            <span class="material-icons divider">double_arrow</span>
-            <a href="about.html" class="active">Luxury Listings</a>
+        <div class="sec-hero-container" data-aos="fade-up">
+            <h1>Gallery</h1>
+            <p class="hero-caption">"Your journey home begins with a vision. We combine local expertise with a global
+                perspective to find the sanctuary you've been looking for."</p>
+
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="material-icons divider">double_arrow</span>
+                <a href="about.html" class="active">Gallery</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
+
+
+
+
+
 
     <section class="gallery-hero">
-    <div class="gallery-intro-text">
-        <span class="luxe-tag">Visual Portfolio</span>
-        <h1>The <span class="italic-serif">Signature</span> Collection</h1>
-        <p>A panoramic journey through our most iconic architectural achievements.</p>
-    </div>
-
-    <div class="shattered-grid">
-        <div class="grid-item item-1">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern Exterior">
+        <div class="gallery-intro-text">
+            <span class="luxe-tag">Visual Portfolio</span>
+            <h1>The <span class="italic-serif">Signature</span> Collection</h1>
+            <p>A panoramic journey through our most iconic architectural achievements.</p>
         </div>
-        <div class="grid-item item-2">
-            <img src="https://images.unsplash.com/photo-1600607687940-c52fb046599c?auto=format&fit=crop&w=800&q=80" alt="Luxury Living">
-        </div>
-        <div class="grid-item item-3">
-            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Pool View">
-        </div>
-        <div class="grid-item item-4">
-            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Interior Detail">
-        </div>
-    </div>
-</section>
 
-
-
-
-
-
-
-
-
-<section class="gallery-filmstrip" id="filmstrip-section">
-    <div class="filmstrip-header">
-        <span class="luxe-tag">Curated Perspective</span>
-        <h2>The <span class="italic-serif">Uninterrupted</span> View</h2>
-    </div>
-
-    <div class="filmstrip-container">
-        <div class="filmstrip-track" id="filmstrip-track">
-            <div class="film-item">
-                <img src="https://images.unsplash.com/photo-1600585154526-990dcea4db0d?auto=format&fit=crop&w=800&q=80" alt="Estate 1">
-                <div class="film-meta"><span>01</span> Sunset Ridge</div>
+        <div class="shattered-grid">
+            <div class="grid-item item-1">
+                <img src="./11.jpg"
+                    alt="Modern Exterior">
             </div>
-            <div class="film-item">
-                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=800&q=80" alt="Estate 2">
-                <div class="film-meta"><span>02</span> Marble Atrium</div>
+            <div class="grid-item item-2">
+                <img src="./grid 3.webp"
+                    alt="Luxury Living">
             </div>
-            <div class="film-item">
-                <img src="https://images.unsplash.com/photo-1600566753190-17f0bbc564ce?auto=format&fit=crop&w=800&q=80" alt="Estate 3">
-                <div class="film-meta"><span>03</span> Glass Pavilion</div>
+            <div class="grid-item item-3">
+                <img src="./pool.webp"
+                    alt="Pool View">
             </div>
-            <div class="film-item">
-                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80" alt="Estate 4">
-                <div class="film-meta"><span>04</span> Cobalt Infinity</div>
+            <div class="grid-item item-4">
+                <img src="./grid 2.webp"
+                    alt="Interior Detail">
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -123,40 +101,37 @@
 
 
 
-<section class="focus-gallery" id="focus-section">
-    <div class="focus-container">
-        <div class="focus-stage">
-            <div class="stage-wrapper">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" id="main-focus-img" alt="Main View">
-                <div class="stage-overlay">
-                    <h2 id="focus-title">The Glass Pavilion</h2>
-                    <p id="focus-desc">Experience the seamless blend of steel and transparency.</p>
+    <section class="gallery-filmstrip" id="filmstrip-section">
+        <div class="filmstrip-header">
+            <span class="luxe-tag">Curated Perspective</span>
+            <h2>The <span class="italic-serif">Uninterrupted</span> View</h2>
+        </div>
+
+        <div class="filmstrip-container">
+            <div class="filmstrip-track" id="filmstrip-track">
+                <div class="film-item">
+                    <img src="./estate 1.webp"
+                        alt="Estate 1">
+                    <div class="film-meta"><span>01</span> Sunset Ridge</div>
+                </div>
+                <div class="film-item">
+                    <img src="./c commercial.webp"
+                        alt="Estate 2">
+                    <div class="film-meta"><span>02</span> Marble Atrium</div>
+                </div>
+                <div class="film-item">
+                    <img src="./16.webp"
+                        alt="Estate 3">
+                    <div class="film-meta"><span>03</span> Glass Pavilion</div>
+                </div>
+                <div class="film-item">
+                    <img src="./c apartment.webp"
+                        alt="Estate 4">
+                    <div class="film-meta"><span>04</span> Cobalt Infinity</div>
                 </div>
             </div>
         </div>
-
-        <div class="focus-thumbs">
-            <div class="thumb-item active" onclick="updateFocus(this)" 
-                 data-img="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" 
-                 data-title="The Glass Pavilion" 
-                 data-desc="Experience the seamless blend of steel and transparency.">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=200&q=80">
-            </div>
-            <div class="thumb-item" onclick="updateFocus(this)" 
-                 data-img="https://images.unsplash.com/photo-1600607687940-c52fb046599c" 
-                 data-title="Artisan Kitchen" 
-                 data-desc="Hand-selected marble meets professional-grade utility.">
-                <img src="https://images.unsplash.com/photo-1600607687940-c52fb046599c?auto=format&fit=crop&w=200&q=80">
-            </div>
-            <div class="thumb-item" onclick="updateFocus(this)" 
-                 data-img="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b" 
-                 data-title="Infinity Edge Pool" 
-                 data-desc="Where the water meets the horizon in perfect symmetry.">
-                <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=200&q=80">
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -166,95 +141,144 @@
 
 
 
-<section class="texture-section">
-    <div class="texture-bg-container">
-        <img src="./coastal.webp" alt="Material Detail" class="parallax-img">
-        <div class="texture-overlay"></div>
-    </div>
-    
-    <div class="texture-content">
-        <span class="luxe-tag">The Materials</span>
-        <h2>Honest <span class="italic-serif">Craft</span></h2>
-        <p>From hand-poured concrete to sustainably sourced cedar, our properties are a testament to the materials that build them.</p>
-        
-        <div class="material-stats">
-            <div class="m-item">
-                <span class="m-label">Origin</span>
-                <p>Carrara, Italy</p>
-            </div>
-            <div class="m-item">
-                <span class="m-label">Finish</span>
-                <p>Matte Silk</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-<section class="gallery-finale" id="gallery-trigger">
-    <div class="finale-header">
-        <span class="luxe-tag">The Complete Archive</span>
-        <h2>Architectural <span class="italic-serif">Legends</span></h2>
-    </div>
-
-    <div class="masonry-grid">
-        <div class="masonry-item animate-up" onclick="openLightbox(0)">
-            <img src="https://images.unsplash.com/photo-1600607687940-c52fb046599c?auto=format&fit=crop&w=600&q=80" alt="Luxe 1">
-            <div class="item-overlay"><span class="material-icons">fullscreen</span></div>
-        </div>
-        <div class="masonry-item animate-up" onclick="openLightbox(1)">
-            <img src="https://images.unsplash.com/photo-1600566753190-17f0bbc564ce?auto=format&fit=crop&w=600&q=80" alt="Luxe 2">
-            <div class="item-overlay"><span class="material-icons">fullscreen</span></div>
-        </div>
-        <div class="masonry-item animate-up" onclick="openLightbox(2)">
-            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=600&q=80" alt="Luxe 3">
-            <div class="item-overlay"><span class="material-icons">fullscreen</span></div>
-        </div>
-    </div>
-
-    <div id="luxe-lightbox" class="lightbox">
-        <span class="close-btn" onclick="closeLightbox()">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div id="caption">View Details</div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<section class="panoramic-reveal">
-    <div class="pano-window">
-        <div class="pano-bg"></div>
-        
-        <div class="pano-card">
-            <span class="luxe-tag">The Horizon</span>
-            <h2>Infinite <span class="italic-serif">Aesthetics</span></h2>
-            <p>Our properties are selected not just for their structure, but for the canvas they occupy. Experience 360-degree views from the highest peaks of Silicon Valley.</p>
-            <div class="pano-footer">
-                <div class="p-stat">
-                    <strong>180°</strong>
-                    <span>Unobstructed View</span>
+    <section class="focus-gallery" id="focus-section">
+        <div class="focus-container">
+            <div class="focus-stage">
+                <div class="stage-wrapper">
+                    <img src="./c house.webp"
+                        id="main-focus-img" alt="Main View">
+                    <div class="stage-overlay">
+                        <h2 id="focus-title">The Glass Pavilion</h2>
+                        <p id="focus-desc">Experience the seamless blend of steel and transparency.</p>
+                    </div>
                 </div>
-                <div class="p-stat">
-                    <strong>850ft</strong>
-                    <span>Above Sea Level</span>
+            </div>
+
+            <div class="focus-thumbs">
+                <div class="thumb-item active" onclick="updateFocus(this)"
+                    data-img="./coastal.webp"
+                    data-title="The Glass Pavilion"
+                    data-desc="Experience the seamless blend of steel and transparency.">
+                    <img
+                        src="./coastal.webp">
+                </div>
+                <div class="thumb-item" onclick="updateFocus(this)"
+                    data-img="./kitchen.webp" data-title="Artisan Kitchen"
+                    data-desc="Hand-selected marble meets professional-grade utility.">
+                    <img
+                        src="./kitchen.webp">
+                </div>
+                <div class="thumb-item" onclick="updateFocus(this)"
+                    data-img="./pool.webp"
+                    data-title="Infinity Edge Pool" data-desc="Where the water meets the horizon in perfect symmetry.">
+                    <img
+                        src="./pool.webp">
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+
+
+
+
+
+
+
+
+    <section class="texture-section">
+        <div class="texture-bg-container">
+            <img src="./11.jpg" alt="Material Detail" class="parallax-img">
+            <div class="texture-overlay"></div>
+        </div>
+
+        <div class="texture-content">
+            <span class="luxe-tag">The Materials</span>
+            <h2>Honest <span class="italic-serif">Craft</span></h2>
+            <p>From hand-poured concrete to sustainably sourced cedar, our properties are a testament to the materials
+                that build them.</p>
+
+            <div class="material-stats">
+                <div class="m-item">
+                    <span class="m-label">Origin</span>
+                    <p>Carrara, Italy</p>
+                </div>
+                <div class="m-item">
+                    <span class="m-label">Finish</span>
+                    <p>Matte Silk</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="gallery-finale" id="gallery-trigger">
+        <div class="finale-header">
+            <span class="luxe-tag">The Complete Archive</span>
+            <h2>Architectural <span class="italic-serif">Legends</span></h2>
+        </div>
+
+        <div class="masonry-grid">
+            <div class="masonry-item animate-up" onclick="openLightbox(0)">
+                <img src="./indicator.webp"
+                    alt="Luxe 1">
+                <div class="item-overlay"><span class="material-icons">fullscreen</span></div>
+            </div>
+            <div class="masonry-item animate-up" onclick="openLightbox(1)">
+                <img src="./17.webp"
+                    alt="Luxe 2">
+                <div class="item-overlay"><span class="material-icons">fullscreen</span></div>
+            </div>
+            <div class="masonry-item animate-up" onclick="openLightbox(2)">
+                <img src="./19.webp"
+                    alt="Luxe 3">
+                <div class="item-overlay"><span class="material-icons">fullscreen</span></div>
+            </div>
+        </div>
+
+        <div id="luxe-lightbox" class="lightbox">
+            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="caption">View Details</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="panoramic-reveal">
+        <div class="pano-window">
+            <div class="pano-bg"></div>
+
+            <div class="pano-card">
+                <span class="luxe-tag">The Horizon</span>
+                <h2>Infinite <span class="italic-serif">Aesthetics</span></h2>
+                <p>Our properties are selected not just for their structure, but for the canvas they occupy. Experience
+                    360-degree views from the highest peaks of Silicon Valley.</p>
+                <div class="pano-footer">
+                    <div class="p-stat">
+                        <strong>180°</strong>
+                        <span>Unobstructed View</span>
+                    </div>
+                    <div class="p-stat">
+                        <strong>850ft</strong>
+                        <span>Above Sea Level</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -334,12 +358,20 @@
     </footer>
 
 
-
-
-
-
-
-
     <script src="./gallery.js"></script>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+
+
 </body>
+
 </html>

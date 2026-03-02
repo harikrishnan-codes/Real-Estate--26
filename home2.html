@@ -7,6 +7,8 @@
     <title>Real Estate</title>
     <link rel="stylesheet" href="./home2.css">
     <link rel="icon" href="./bg remove.webp">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -48,17 +50,17 @@
                 results through dedication, ease of process, and extraordinary services.
             </p>
 
-            <div class="search-box">
-                <input type="text" placeholder="Enter an address, state, city, area or zip code">
-                <button>Search</button>
-            </div>
+            <form action="./search.html" about="./error.html" method="GET">
+                <div class="search-box">
+                    <input type="text" name="query" placeholder="Enter an address, state, city, area or zip code"
+                        required minlength="3">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
         </div>
 
     </header>
 
-    <!-- <script src="script.js"></script>
-</body>
-</html> -->
 
 
 
@@ -66,14 +68,7 @@
 
 
 
-
-
-
-
-
-
-
-    <section class="home-hero-v2">
+    <section class="home-hero-v2" data-aos="fade-up">
         <div class="hero-v2-grid">
             <div class="panel-text">
                 <div class="reveal-box">
@@ -89,7 +84,7 @@
 
             <div class="panel-image">
                 <div class="img-reveal-wrapper">
-                    <img src="./c office.webp" alt="Minimalist Home">
+                    <img src="./grid 1.webp" alt="Minimalist Home">
                 </div>
                 <div class="floating-coord">37.3382° N, 121.8863° W</div>
             </div>
@@ -113,29 +108,25 @@
         <div class="walk-grid">
             <div class="walk-col col-down">
                 <div class="walk-item item-fade">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
-                        alt="Estate 1">
+                    <img src="./c house.webp" alt="Estate 1">
                     <div class="walk-label">Skyline Manor</div>
                 </div>
             </div>
 
             <div class="walk-col col-up">
                 <div class="walk-item item-fade">
-                    <img src="https://images.unsplash.com/photo-1600607687940-c52fb046599c?auto=format&fit=crop&w=600&q=80"
-                        alt="Estate 2">
+                    <img src="./estate 1.webp" alt="Estate 2">
                     <div class="walk-label">The Glass Atrium</div>
                 </div>
                 <div class="walk-item item-fade">
-                    <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=600&q=80"
-                        alt="Estate 3">
+                    <img src="./glass.webp" alt="Estate 3">
                     <div class="walk-label">Azure Infinity</div>
                 </div>
             </div>
 
             <div class="walk-col col-down">
                 <div class="walk-item item-fade">
-                    <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=600&q=80"
-                        alt="Estate 4">
+                    <img src="./condos.webp" alt="Estate 4">
                     <div class="walk-label">Oakwood Retreat</div>
                 </div>
             </div>
@@ -205,24 +196,21 @@
 
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
-                        alt="Mountain Landscape">
+                    <img src="./villa 2.webp" alt="Mountain Landscape">
                     <div class="card-overlay">
                         <h3>HOME SEARCH</h3>
                     </div>
                 </div>
 
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1556912177-c54030639a6d?auto=format&fit=crop&w=800&q=80"
-                        alt="Modern Kitchen">
+                    <img src="./kitchen.webp" alt="Modern Kitchen">
                     <div class="card-overlay">
                         <h3>HOME VALUATION</h3>
                     </div>
                 </div>
 
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-                        alt="Modern Garden">
+                    <img src="./estate 1.webp" alt="Modern Garden">
                     <div class="card-overlay">
                         <h3>LET'S CONNECT</h3>
                     </div>
@@ -245,8 +233,7 @@
             <div class="scroll-track" id="scroll-track">
                 <div class="project-slide">
                     <div class="slide-image">
-                        <img src="https://images.unsplash.com/photo-1600585154526-990dcea4db0d?auto=format&fit=crop&w=1200&q=80"
-                            alt="The Obsidian">
+                        <img src="./11.jpg" alt="The Obsidian">
                     </div>
                     <div class="slide-info">
                         <span class="luxe-tag">Concept 01</span>
@@ -257,8 +244,7 @@
 
                 <div class="project-slide">
                     <div class="slide-image">
-                        <img src="https://images.unsplash.com/photo-1600607687940-c52fb046599c?auto=format&fit=crop&w=1200&q=80"
-                            alt="Ivory Heights">
+                        <img src="./12.jpg" alt="Ivory Heights">
                     </div>
                     <div class="slide-info">
                         <span class="luxe-tag">Concept 02</span>
@@ -269,8 +255,7 @@
 
                 <div class="project-slide">
                     <div class="slide-image">
-                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80"
-                            alt="Ethereal Glass">
+                        <img src="./13.webp" alt="Ethereal Glass">
                     </div>
                     <div class="slide-info">
                         <span class="luxe-tag">Concept 03</span>
@@ -294,19 +279,16 @@
     <section class="parallax-grid-v2">
         <div class="p-grid-container">
             <div class="p-main-frame">
-                <img src="https://images.unsplash.com/photo-1600585154526-990dcea4db0d?auto=format&fit=crop&w=1200&q=80"
-                    alt="Primary Structure">
+                <img src="./15.webp" alt="Primary Structure">
                 <div class="p-border-grow"></div>
             </div>
 
             <div class="p-detail-one float-anim">
-                <img src="https://images.unsplash.com/photo-1600607687940-c52fb046599c?auto=format&fit=crop&w=600&q=80"
-                    alt="Interior Detail">
+                <img src="./grid 3.webp" alt="Interior Detail">
             </div>
 
             <div class="p-detail-two float-anim-reverse">
-                <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=600&q=80"
-                    alt="Pool Detail">
+                <img src="./pool.webp" alt="Pool Detail">
             </div>
 
             <div class="p-content-box">
@@ -329,8 +311,7 @@
         <div class="partner-container">
             <div class="partner-visual">
                 <div class="p-img-box">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
-                        id="partner-photo" alt="Partner">
+                    <img src="./contact.webp" id="partner-photo" alt="Partner">
                 </div>
                 <div class="p-signature">The Executive Board</div>
             </div>
@@ -339,9 +320,8 @@
                 <span class="luxe-tag">Direct Access</span>
                 <h2>Global <span class="italic-gold">Leadership</span></h2>
 
-                <div class="partner-item active" onclick="revealPartner(this)"
-                    data-img="https://images.unsplash.com/photo-1560250097-0b93528c311a" data-role="Managing Director"
-                    data-mail="sam@residences.com">
+                <div class="partner-item active" onclick="revealPartner(this)" data-img="./founder.webp"
+                    data-role="Managing Director" data-mail="sam@residences.com">
                     <div class="p-header">
                         <h3>Samuel J. Residences</h3>
                         <span class="p-plus">+</span>
@@ -352,8 +332,7 @@
                     </div>
                 </div>
 
-                <div class="partner-item" onclick="revealPartner(this)"
-                    data-img="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
+                <div class="partner-item" onclick="revealPartner(this)" data-img="./f3-testi.webp"
                     data-role="Head of Investment" data-mail="elara@residences.com">
                     <div class="p-header">
                         <h3>Elara Vance</h3>
@@ -400,6 +379,50 @@
                             due diligence across four continents.</p>
                     </div>
                 </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What types of properties do you specialize in?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We specialize in luxury villas, premium apartments, commercial office spaces, and high-value
+                            investment properties in prime locations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can you help with property documentation and legal verification?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Our legal team ensures complete document verification, title checks, and compliance with
+                            local and international property laws.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you provide home loan assistance?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We collaborate with leading financial institutions to help clients secure competitive home
+                            loans with flexible repayment options.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I schedule a property viewing?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can schedule a viewing by contacting our support team through the website or by calling
+                            our customer care number for personalized assistance.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -420,7 +443,7 @@
             <p>Join an exclusive list of principals receiving off-market architectural gems before they reach the
                 public.</p>
             <div class="cta-actions">
-                <a href="#" class="btn-primary-luxe">Request a Private Briefing</a>
+                <a href="./error.html" class="btn-primary-luxe">Request a Private Briefing</a>
             </div>
         </div>
     </section>
@@ -433,7 +456,7 @@
 
 
 
-   
+
 
 
 
@@ -510,6 +533,19 @@
 
 
     <script src="./home2.js"></script>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+
+
 
 </body>
 

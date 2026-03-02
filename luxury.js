@@ -1,3 +1,5 @@
+// hamburger js
+
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 
@@ -80,7 +82,7 @@ animate();
 
 
 
-
+// card type js
 
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.reveal-card');
@@ -113,28 +115,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// count animation js
+
+ document.addEventListener("DOMContentLoaded", function () {
+
+    const counters = document.querySelectorAll(".spec-val");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                counters.forEach(counter => {
+
+                    const target = parseInt(counter.textContent.replace(/,/g, ""));
+                    let start = 0;
+                    const duration = 2000; 
+                    const incrementTime = 20;
+                    const steps = duration / incrementTime;
+                    const increment = target / steps;
+
+                    const updateCounter = () => {
+                        start += increment;
+
+                        if (start < target) {
+                            counter.textContent = Math.floor(start).toLocaleString();
+                            setTimeout(updateCounter, incrementTime);
+                        } else {
+                            counter.textContent = target.toLocaleString();
+                        }
+                    };
+
+                    updateCounter();
+                });
+
+                observer.unobserve(entry.target); 
+            }
+
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(document.querySelector(".canvas-specs"));
+
+});
+ 
 
 
 
+
+
+
+// philosophy js
 
 window.addEventListener('scroll', () => {
     const trigger = document.querySelector('#parallax-trigger');
     const img = document.querySelector('#parallax-img');
     const text = document.querySelector('#parallax-text');
     
-    // Calculate how much of the section is visible
-    const sectionTop = trigger.offsetTop;
+     const sectionTop = trigger.offsetTop;
     const scrollPos = window.pageYOffset;
     const distance = scrollPos - sectionTop;
 
-    // Check if the section is in the viewport
-    if (scrollPos > sectionTop - window.innerHeight && scrollPos < sectionTop + trigger.offsetHeight) {
+     if (scrollPos > sectionTop - window.innerHeight && scrollPos < sectionTop + trigger.offsetHeight) {
         
-        // Move image slowly downwards (Parallax)
-        img.style.transform = `translateY(${distance * 0.15}px)`;
+         img.style.transform = `translateY(${distance * 0.15}px)`;
         
-        // Move text slightly upwards for a "floating" feel
-        text.style.transform = `translateY(${distance * -0.05}px)`;
+         text.style.transform = `translateY(${distance * -0.05}px)`;
     }
 });
 
@@ -146,7 +192,7 @@ window.addEventListener('scroll', () => {
 
 
 
-
+// inquiry privately js
 
 document.addEventListener('DOMContentLoaded', () => {
     const trigger = document.querySelector('#viewing-trigger');
@@ -157,12 +203,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Open curtains
-                cLeft.style.transform = "translateX(-100%)";
+                 cLeft.style.transform = "translateX(-100%)";
                 cRight.style.transform = "translateX(100%)";
                 
-                // Fade in content
-                content.style.opacity = "1";
+                 content.style.opacity = "1";
                 content.style.transform = "scale(1)";
                 
                 revealObserver.unobserve(trigger);
